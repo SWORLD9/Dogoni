@@ -6,10 +6,12 @@ public class MovePlayer : MonoBehaviour
     private float speedMovePlayer; // Speed Move Player
     private float speedRotationPlayer; // Speed Rotation Player
 
-    public float speedMovement; // Speed Player 
-    public float speedRotate;
+    [SerializeField] private float speedMovement; // Speed Player 
+    [SerializeField] private float speedRotate;
 
-    public Transform Point;
+    [SerializeField] private Transform Point;
+
+
     void Start()
     {
         rbPlayer = GetComponent<Rigidbody>();   // Get Rigidbody from Player

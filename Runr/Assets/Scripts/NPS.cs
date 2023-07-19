@@ -3,10 +3,10 @@ using UnityEngine.AI;
 
 public class NPCBehavior : MonoBehaviour
 {
-    public Transform target; // игрок, от которого нужно убежать
-    public Transform runTo; // точка, куда нужно убежать
-    public float runDistance = 4f; // дистанция, при которой NPC начнет убегать
-    public float destroyDelay = 1f; // задержка перед удалением NPC
+    [SerializeField] private Transform target; // игрок, от которого нужно убежать
+    [SerializeField] private Transform runTo; // точка, куда нужно убежать
+    [SerializeField] private float runDistance = 4f; // дистанция, при которой NPC начнет убегать
+    [SerializeField] private float destroyDelay = 1f; // задержка перед удалением NPC
 
     private NavMeshAgent agent;
     private Animator animator;

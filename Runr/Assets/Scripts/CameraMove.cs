@@ -3,8 +3,8 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
 
-    public float SpeedCamera;
-    public GameObject Player;
+    [SerializeField] private float SpeedCamera;
+    [SerializeField] private GameObject Player;
     private Vector3 difference;
     private Vector3 difference2;
     private void Start()

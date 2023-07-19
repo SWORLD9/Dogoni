@@ -3,10 +3,10 @@ using UnityEngine;
 public class RedObstacle : MonoBehaviour
 {
     private Vector3 startPos;
-    public Vector3 endPos;
-    
+    [SerializeField] private Vector3 endPos;
 
-    public float speed;
+
+    [SerializeField] private float speed;
 
     private void Start()
     {

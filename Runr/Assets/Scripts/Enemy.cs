@@ -3,13 +3,13 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public ParticleSystem _particleSystem; // Частицы смерти
+    [SerializeField] private ParticleSystem _particleSystem; // Частицы смерти
 
-    public GameObject Player; // give Player (Догоняющий)
+    [SerializeField] private GameObject Player; // give Player (Догоняющий)
 
     private NavMeshAgent agent; // NavMash Agent
 
-    public GameObject position_point; // Точка куда бежать 
+    [SerializeField] private GameObject position_point; // Точка куда бежать 
 
 
     
